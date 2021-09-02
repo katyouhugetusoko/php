@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン画面</title>
+</head>
+
+<body>
+    <h3>ログイン</h3>
+    <form action="login.php" method="POST">
+        <h2>ログイン名</h2>
+        <input type="text" name="id" value="">
+        <h2>パスワード</h2>
+        <input type="text" name="password">
+        <br><br>
+        <button type="submit" name="operation" value="search">ログイン</button>
+    </form>
+
+    <h1>新規登録</h1>
+   <form action="touroku.php" method="POST">
+    <h2>ログイン名</h2>
+    <h5>好きな数字を入力してね。すでに使用されている場合はエラーになります。</h5>
+    <input type="text" name="id" >
+    <h2>パスワード</h2>
+    <h5>三文字以上一五文字以内の数字を入力してね。</h5>
+    <input type="text" name="password">
+    <br><br>
+    <button type="submit" name="operation" value="search">登録</button>
+
+   </form>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+//テストデータをデータベースに投入。
+CREATE DATABASE conbine DEFAULT CHARACTER SET utf8mb4;
+
+//テスト用テーブルを作成する
+CREATE TABLE syouhin (
+    `id`            SERIAL PRIMARY KEY,
+    `created`       TIMESTAMP NOT NULL,
+    `modified`      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `name`         VARCHAR(255) NOT NULL,
+    `price`         INTEGER
+);
+
+
+
+テストデータを投入する。
+
+
+DELETE FROM syouhin;
+ALTER TABLE syouhin AUTO_INCREMENT = 1;
+INSERT INTO syouhin (created, name, price) VALUES (CURRENT_TIMESTAMP, 'おにぎり', 100);
+INSERT INTO syouhin (created, name, price) VALUES (CURRENT_TIMESTAMP, 'メロンパン', 120);
+INSERT INTO syouhin (created, name, price) VALUES (CURRENT_TIMESTAMP, 'からあげくん', 240);
+INSERT INTO syouhin (created, name, price) VALUES (CURRENT_TIMESTAMP, 'ポテチ', 150);
+
+
+
+CREATE TABLE syouhin (
+    `id`            SERIAL PRIMARY KEY,
+    `created`       TIMESTAMP NOT NULL,
+    `modified`      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `name`         VARCHAR(255) NOT NULL,
+    `price`         INTEGER
+);
+
+
+
+CREATE TABLE login (
+    `id`            SERIAL PRIMARY KEY,
+    `password`         INTEGER
+);
+
+
+DELETE FROM login;
+ALTER TABLE login AUTO_INCREMENT = 1;
+INSERT INTO login (id, password) VALUES ('123',123 );
