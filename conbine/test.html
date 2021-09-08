@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+
+<body>
+    <div id="app" class="container">
+        <h1>ログイン</h1>
+        <br>
+        <form action="login.php" method="POST">
+            <div class="form-group">
+                <h2>ログイン名</h2>
+                <input type="text" class="form-control" placeholder="IDを入力" name="id" value="">
+                <small class="form-text">あなたのIDを入力してください。</small>
+            </div>
+
+            <div class="form-group">
+                <h2>パスワード</h2>
+                <input type="text" class="form-control" placeholder="パスワード" name="password">
+                <small class="form-text">パスワードを入力してください。</small>
+                <br>
+                <button type="submit" class="btn btn-primary" name="operation" value="search">ログイン</button>
+            </div>
+        </form>
+
+
+        <h1>新規登録</h1>
+        <br>
+        <div id="app" class="container">
+            
+            <form action="touroku.php" method="POST">
+                <div class="form-group">
+                    <h2>ログイン名</h2>
+                    <input type="text" class="form-control" placeholder="ログイン名" name="id">
+                    <small class="form-text">好きな数字を入力してね。すでに使用されている場合はエラーになります。</small>
+                </div>
+                <div class="form-group">
+                <h2>パスワード</h2>
+                <input type="text" class="form-control" placeholder="パスワード" name="password">
+                <small class="form-text">三文字以上一五文字以内の数字を入力してね。</small>
+            </div>
+                <button type="submit" class="btn btn-primary" name="operation" value="search">登録</button>
+
+            </form>
+        </div>
+</body>
+
+
+</html>
